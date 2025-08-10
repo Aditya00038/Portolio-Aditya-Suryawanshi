@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aditya's Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="logo">As</div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul class="web-menu" id="web-menu">
+          <li><a href="#home-section">Home</a></li>
+          <li><a href="#projects-section">Projects</a></li>
+          <li><a href="#skills-section">Skills</a></li>
+          <li><a href="#certifications-section">Certifications</a></li>
+          <li><a href="#contact-section">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Landing Page -->
+
+    <main>
+      <section id="home-section" class="sec1">
+        <div class="left">
+          <h1 class="left-h1"><small>Hello, I'm</small></h1>
+          <h1 class="left-h1-2">Aditya Suryawanshi</h1>
+          <div class="auto-type">
+            <h1>
+              I am a <span id="typed-text"></span><span id="cursor">|</span>
+            </h1>
+          </div>
+          <p>
+            I am a passionate B.Tech Computer Science student at MIT Academy of
+            Engineering, Pune, with a keen interest in AI. Proficient in Python,
+            Java, and HTML, CSS, JavaScript, I enjoy building projects that
+            combine technology with real-world applications. Currently exploring
+            AI and web development, I aim to become an AI engineer.
+          </p>
+          <div class="cv-btn">
+            <button class="button type1">
+              <span class="btn-txt">Download Resume</span>
+            </button>
+            <button class="button type1">
+              <span class="btn-txt">Contact Me</span>
+            </button>
+          </div>
+          <div class="social-links">
+            <div
+              id="linkedin"
+              class="social-btn flex-center"
+              onclick="socialAcc()"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                height="24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                ></path>
+              </svg>
+              <span>Aditya</span>
+            </div>
+
+            <div
+              id="github"
+              class="social-btn flex-center"
+              onclick="socialAcc2()"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                height="24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                ></path>
+              </svg>
+              <span>Aditya0038</span>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="design">
+            <img src="aditya.png" alt="aditya" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects & Skills -->
+      <section id="projects-section" class="sec2">
+        <div class="section-header">
+          <h1 class="section-h1">Featured Projects</h1>
+          <h2 class="section-h2">My Recent Work</h2>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-card-v2">
+            <div
+              class="project-media-v2"
+              data-video-src="Projects/project_vds/Chemtrack.mp4"
+            >
+              <img
+                src="Projects/chemTrack.png"
+                alt="Chemical Tracker Thumbnail"
+              />
+              <video muted loop playsinline></video>
+            </div>
+            <div class="project-content-v2">
+              <div class="project-details-v2">
+                <h3>Chemical Tracker</h3>
+                <p>
+                  A web application to track and manage chemical inventory for a
+                  laboratory.
+                </p>
+              </div>
+              <div class="tech-stack-v2">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                  alt="HTML5 Logo"
+                  title="HTML"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                  alt="CSS3 Logo"
+                  title="CSS"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  alt="JavaScript Logo"
+                  title="JavaScript"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+                  alt="Firebase Logo"
+                  title="Firebase"
+                />
+              </div>
+              <a
+                href="https://aditya00038.github.io/Chemistry-Inventory/"
+                class="project-link-v2"
+                >Live Demo
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card-v2">
+            <div
+              class="project-media-v2"
+              data-video-src="Projects/project_vds/Chemtrack.mp4"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1510511459019-51739352e6b0?q=80&w=1974&auto=format&fit=crop"
+                alt="VidSnapAI Thumbnail"
+              />
+              <video muted loop playsinline></video>
+            </div>
+            <div class="project-content-v2">
+              <div class="project-details-v2">
+                <h3>VidSnapAI</h3>
+                <p>
+                  A dynamic social media platform that uses AI to automatically
+                  generate short video clips from longer uploads.
+                </p>
+              </div>
+              <div class="tech-stack-v2">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                  alt="Python Logo"
+                  title="Python"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
+                  alt="Flask Logo"
+                  title="Flask"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                  alt="HTML5 Logo"
+                  title="HTML"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                  alt="CSS3 Logo"
+                  title="CSS"
+                />
+              </div>
+              <a href="#" class="project-link-v2">View Project</a>
+            </div>
+          </div>
+
+          <div class="project-card-v2">
+            <div
+              class="project-media-v2"
+              data-video-src="https://www.w3schools.com/html/mov_bbb.mp4"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1623862770284-f725a3a78d06?q=80&w=1932&auto=format&fit=crop"
+                alt="HireMe AI Thumbnail"
+              />
+              <video muted loop playsinline></video>
+            </div>
+            <div class="project-content-v2">
+              <div class="project-details-v2">
+                <h3>HireMe AI</h3>
+                <p>
+                  An intelligent resume builder that provides real-time feedback
+                  and suggestions to optimize your resume for job applications.
+                </p>
+              </div>
+              <div class="tech-stack-v2">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                  alt="HTML5 Logo"
+                  title="HTML"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                  alt="CSS3 Logo"
+                  title="CSS"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  alt="JavaScript Logo"
+                  title="JavaScript"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+                  alt="Firebase Logo"
+                  title="Firebase"
+                />
+              </div>
+              <a href="#" class="project-link-v2">View Project</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="more-projects" class="projects-grid hidden-projects">
+          <div class="project-card-v2">
+            <div
+              class="project-media-v2"
+              data-video-src="https://www.w3schools.com/html/mov_bbb.mp4"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?q=80&w=1974&auto=format&fit=crop"
+                alt="New Project 1 Thumbnail"
+              />
+              <video muted loop playsinline></video>
+            </div>
+            <div class="project-content-v2">
+              <div class="project-details-v2">
+                <h3>New Project One</h3>
+                <p>
+                  This is a new project that is initially hidden and will be
+                  shown when the button is clicked.
+                </p>
+              </div>
+              <div class="tech-stack-v2">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                  alt="React Logo"
+                  title="React"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                  alt="Node.js Logo"
+                  title="Node.js"
+                />
+              </div>
+              <a href="#" class="project-link-v2">View Project</a>
+            </div>
+          </div>
+
+          <div class="project-card-v2">
+            <div
+              class="project-media-v2"
+              data-video-src="https://www.w3schools.com/html/mov_bbb.mp4"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1510511459019-51739352e6b0?q=80&w=1974&auto=format&fit=crop"
+                alt="New Project 2 Thumbnail"
+              />
+              <video muted loop playsinline></video>
+            </div>
+            <div class="project-content-v2">
+              <div class="project-details-v2">
+                <h3>New Project Two</h3>
+                <p>
+                  This is another new project that is initially hidden and will
+                  be shown when the button is clicked.
+                </p>
+              </div>
+              <div class="tech-stack-v2">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                  alt="Python Logo"
+                  title="Python"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+                  alt="Django Logo"
+                  title="Django"
+                />
+              </div>
+              <a href="#" class="project-link-v2">View Project</a>
+            </div>
+          </div>
+
+          <div class="project-card-v2">
+            <div
+              class="project-media-v2"
+              data-video-src="https://www.w3schools.com/html/mov_bbb.mp4"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1510511459019-51739352e6b0?q=80&w=1974&auto=format&fit=crop"
+                alt="New Project 2 Thumbnail"
+              />
+              <video muted loop playsinline></video>
+            </div>
+            <div class="project-content-v2">
+              <div class="project-details-v2">
+                <h3>New Project Two</h3>
+                <p>
+                  This is another new project that is initially hidden and will
+                  be shown when the button is clicked.
+                </p>
+              </div>
+              <div class="tech-stack-v2">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                  alt="Python Logo"
+                  title="Python"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+                  alt="Django Logo"
+                  title="Django"
+                />
+              </div>
+              <a href="#" class="project-link-v2">View Project</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="view-more-container">
+          <a href="#" id="view-more-btn" class="view-more-btn"
+            >View More Work</a
+          >
+          <a href="#" id="view-less-btn" class="view-more-btn hidden-less-btn"
+            >View Less Work</a
+          >
+        </div>
+      </section>
+
+      <section id="skills-section" class="sec3-v3">
+        <div class="section-header-v3">
+          <h1 class="section-h1-v3">My Skills</h1>
+          <h2 class="section-h2-v3">Technologies I Use</h2>
+        </div>
+
+        <div class="skills-grid-v3">
+          <div class="skill-card-v4">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              alt="HTML5 Logo"
+              class="skill-logo-v3"
+            />
+            <span class="skill-name-v3">HTML</span>
+          </div>
+          <div class="skill-card-v4">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              alt="CSS3 Logo"
+              class="skill-logo-v3"
+            />
+            <span class="skill-name-v3">CSS</span>
+          </div>
+          <div class="skill-card-v4">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript Logo"
+              class="skill-logo-v3"
+            />
+            <span class="skill-name-v3">JavaScript</span>
+          </div>
+          <div class="skill-card-v4">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+              alt="Java Logo"
+              class="skill-logo-v3"
+            />
+            <span class="skill-name-v3">Java</span>
+          </div>
+          <div class="skill-card-v4">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+              alt="Python Logo"
+              class="skill-logo-v3"
+            />
+            <span class="skill-name-v3">Python</span>
+          </div>
+          <div class="skill-card-v4">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+              alt="C Logo"
+              class="skill-logo-v3"
+            />
+            <span class="skill-name-v3">C</span>
+          </div>
+          <div class="skill-card-v4">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+              alt="MySQL Logo"
+              class="skill-logo-v3"
+            />
+            <span class="skill-name-v3">MySQL</span>
+          </div>
+          <div class="skill-card-v4">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              alt="React Logo"
+              class="skill-logo-v3"
+            />
+            <span class="skill-name-v3">React</span>
+          </div>
+          <div class="skill-card-v4">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
+              alt="Flask Logo"
+              class="skill-logo-v3"
+            />
+            <span class="skill-name-v3">Flask</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="education-section" class="sec4-v2">
+        <div class="section-header-v3">
+          <h1 class="section-h1-v3">My Education</h1>
+          <h2 class="section-h2-v3">Academic Journey</h2>
+        </div>
+
+        <div class="timeline-container-v2">
+          <div class="timeline-item-v2 timeline-left">
+            <div class="timeline-content-v2">
+              <h3 class="timeline-degree-v2">College</h3>
+              <p class="timeline-college-v2">MIT Academy of Engineering</p>
+              <p class="timeline-college-v2">
+                Btech Computer Science Engineering
+              </p>
+              <p class="timeline-date-v2">2024 - Present</p>
+            </div>
+            <div class="timeline-dot-v2"></div>
+            <div class="timeline-logo-container-v2">
+              <img
+                src=" https://play-lh.googleusercontent.com/TsNBFHfNVRjYO6ssNxZpsA_sbwUQYkGKhGsKYsCe4B8Tz5E0wlw-IfW7iUe0IOWSjmI"
+                alt="College Logo"
+                class="clg-logo-v2"
+              />
+            </div>
+          </div>
+
+          <div class="timeline-item-v2 timeline-right">
+            <div class="timeline-logo-container-v2">
+              <img
+                src="https://nowrosjeewadia.mespune.org/wp-content/uploads/2022/03/NWCLogo.jpg"
+                alt="High School Logo"
+                class="clg-logo-v2"
+              />
+            </div>
+            <div class="timeline-dot-v2"></div>
+            <div class="timeline-content-v2">
+              <h3 class="timeline-degree-v2">High School</h3>
+              <p class="timeline-college-v2">Nowrosjee Wadia</p>
+              <p class="timeline-date-v2">2022 - 2024</p>
+            </div>
+          </div>
+
+          <div class="timeline-item-v2 timeline-left">
+            <div class="timeline-content-v2">
+              <h3 class="timeline-degree-v2">School</h3>
+              <p class="timeline-college-v2">New English School Ramanbaug</p>
+              <p class="timeline-date-v2">2017 - 2022</p>
+            </div>
+            <div class="timeline-dot-v2"></div>
+            <div class="timeline-logo-container-v2">
+              <img
+                src="https://www.schoolsuniverse.com/_next/image?url=https%3A%2F%2Fcdn.schoolsuniverse.com%2Fmedia%2Fuploads%2F2025-03-02-08-50-18-910400-download%2520-%25202025-03-02T141845.459.jfif&w=256&q=80"
+                alt="School Logo"
+                class="clg-logo-v2"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="certifications-section" class="sec5">
+        <div class="section-header-v3">
+          <h1 class="section-h1-v3">Certifications</h1>
+          <h2 class="section-h2-v3">My Professional Credentials</h2>
+        </div>
+
+        <div class="slider-container">
+          <button class="slider-btn left-arrow" aria-label="Scroll left">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+
+          <div class="certifications-slider">
+            <div class="certification-card">
+              <div class="cert-header">
+                <img
+                  src="Certificates/cisco1.png"
+                  alt="Google Logo"
+                  class="cert-logo"
+                />
+                <a
+                  href="https://drive.google.com/file/d/1Qk4dADWyu_yO_HRkM60pnk1gn8_N9m9D/view?usp=drivesdk "
+                  target="_blank"
+                  class="cert-link"
+                  title="View Credential"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-external-link"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+              <h3 class="cert-title">Essential Of Python 1 Certificate</h3>
+              <p class="cert-org">Cisco</p>
+              <p class="cert-date">Issued: April 2025</p>
+            </div>
+
+            <div class="certification-card">
+              <div class="cert-header">
+                <img
+                  src="Certificates/cisco2.png"
+                  alt="Google Logo"
+                  class="cert-logo"
+                />
+                <a
+                  href="https://drive.google.com/file/d/1UGr4IZwHOt8prsD4KBtPd8ppzEohJLDE/view?usp=drivesdk "
+                  target="_blank"
+                  class="cert-link"
+                  title="View Credential"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-external-link"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+              <h3 class="cert-title">Essential Of Python 2 Certificate</h3>
+              <p class="cert-org">Cisco</p>
+              <p class="cert-date">Issued: April 2025</p>
+            </div>
+
+            <div class="certification-card">
+              <div class="cert-header">
+                <img
+                  src="Certificates/google.png"
+                  alt="Google Logo"
+                  class="cert-logo"
+                />
+                <a
+                  href="https://drive.google.com/file/d/1YFPZzb2itV_7MMtsEngMOFPbZDzAhwNX/view?usp=drivesdk "
+                  target="_blank"
+                  class="cert-link"
+                  title="View Credential"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-external-link"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+              <h3 class="cert-title">Google AI Essential</h3>
+              <p class="cert-org">Coursera</p>
+              <p class="cert-date">Completed: June 2025</p>
+            </div>
+
+            <div class="certification-card">
+              <div class="cert-header">
+                <img
+                  src="Certificates/AR.png"
+                  alt="Google Logo"
+                  class="cert-logo"
+                />
+                <a
+                  href="https://drive.google.com/file/d/1i5Hww0PYTGmjc3RkSDUI6lA7D42A1KLg/view?usp=drivesdk "
+                  target="_blank"
+                  class="cert-link"
+                  title="View Credential"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-external-link"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+              <h3 class="cert-title">Agumented & Virtual Reality</h3>
+              <p class="cert-org">Future Skills</p>
+              <p class="cert-date">Issued: April 2025</p>
+            </div>
+            <div class="certification-card">
+              <div class="cert-header">
+                <img
+                  src="Certificates/webDev.png"
+                  alt="Google Logo"
+                  class="cert-logo"
+                />
+                <a
+                  href=""
+                  target="_blank"
+                  class="cert-link"
+                  title="View Credential"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-external-link"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+              <h3 class="cert-title">Web Development</h3>
+              <p class="cert-org">Teachnook</p>
+              <p class="cert-date">Issued: Nov 2024</p>
+            </div>
+
+            <div class="certification-card">
+              <div class="cert-header">
+                <img
+                  src="Certificates/SQL.png"
+                  alt="Google Logo"
+                  class="cert-logo"
+                />
+                <a
+                  href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-126ec49f-4df9-4fc6-be03-52dce1626b4d.pdf "
+                  target="_blank"
+                  class="cert-link"
+                  title="View Credential"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-external-link"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+              <h3 class="cert-title">SQL Completion</h3>
+              <p class="cert-org">Udemy</p>
+              <p class="cert-date">Issued: June 2025</p>
+            </div>
+
+            <div class="certification-card">
+              <div class="cert-header">
+                <img
+                  src="Certificates/datathon.png"
+                  alt="Google Logo"
+                  class="cert-logo"
+                />
+                <a
+                  href="https://drive.google.com/file/d/1H2B5pqxsyYwOTKMNptQnYYwEiAiSmyv_/view?usp=drivesdk  "
+                  target="_blank"
+                  class="cert-link"
+                  title="View Credential"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-external-link"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+              <h3 class="cert-title">Datathon Participation</h3>
+              <p class="cert-org">MIT AOE</p>
+              <p class="cert-date">Issued: April 2025</p>
+            </div>
+
+            <div class="certification-card">
+              <div class="cert-header">
+                <img
+                  src="Certificates/CyberSecurity.png"
+                  alt="Google Logo"
+                  class="cert-logo"
+                />
+                <a
+                  href="#"
+                  target="_blank"
+                  class="cert-link"
+                  title="View Credential"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-external-link"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+              <h3 class="cert-title">CyberSecurity</h3>
+              <p class="cert-org">Infosys</p>
+              <p class="cert-date">Issued: July 2025</p>
+            </div>
+
+            <div class="certification-card">
+              <div class="cert-header">
+                <img
+                  src="Certificates/linux.png"
+                  alt="Google Logo"
+                  class="cert-logo"
+                />
+                <a
+                  href="#"
+                  target="_blank"
+                  class="cert-link"
+                  title="View Credential"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-external-link"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+              <h3 class="cert-title">Kali Linux Basic</h3>
+              <p class="cert-org">Smplilearn</p>
+              <p class="cert-date">Issued: Dec 2024</p>
+            </div>
+          </div>
+
+          <button class="slider-btn right-arrow" aria-label="Scroll right">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <section id="contact-section" class="sec6">
+        <div class="section-header-v3">
+          <h1 class="section-h1-v3">Get In Touch</h1>
+          <h2 class="section-h2-v3">I'd love to connect with you.</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-col">
+            <h3 class="contact-info-heading">My Contact Info</h3>
+            <p class="contact-info-text">
+              Feel free to reach out to me through email or my social media
+              profiles.
+            </p>
+            <div class="contact-links-grid">
+              <a
+                href="mailto:your-email@example.com"
+                class="contact-link"
+                aria-label="Email me"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-mail"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  ></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>Email</span>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/your-profile"
+                target="_blank"
+                class="contact-link"
+                aria-label="Visit my LinkedIn profile"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-linkedin"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                  ></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+                <span>LinkedIn</span>
+              </a>
+              <a
+                href="https://github.com/your-username"
+                target="_blank"
+                class="contact-link"
+                aria-label="Visit my GitHub profile"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-github"
+                >
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 17 2.22A13.63 13.63 0 0 0 12 2c-1.92 0-3.66.69-5.11 2.53C5.17.65 4.9.65 4 1s-1.92 2.53-2 2.72c-.17 1.35-.9 2.52-1.92 2.53a5.44 5.44 0 0 0-1.5 3.78c0 5.45 3.3 6.64 6.44 7a3.37 3.37 0 0 0-.94 2.61V22"
+                  ></path>
+                </svg>
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-form-col">
+            <h3 class="contact-form-heading">Send me a message</h3>
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-input"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Your Email Address"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-textarea"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <div id="toastNotification" class="toast-notification">
+        <div class="toast-content">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="check-icon"
+          >
+            <polyline points="9 11 12 14 22 4"></polyline>
+            <path
+              d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"
+            ></path>
+          </svg>
+          <p>Message Sent Successfully!</p>
+        </div>
+        <button class="toast-close" aria-label="Close notification">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h4 class="footer-heading">About Me</h4>
+          <p>
+            A passionate software developer creating elegant and efficient
+            solutions. I enjoy building things for the web and solving
+            challenging problems with code.
+          </p>
+        </div>
+
+        <div class="footer-links-container">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home-section">Home</a></li>
+            <li><a href="#projects-section">Projects</a></li>
+            <li><a href="#skills-section">Skills</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social-container">
+          <h4 class="footer-heading">Connect</h4>
+          <div class="footer-social-links">
+            <a
+              href="https://www.linkedin.com/in/your-profile"
+              target="_blank"
+              aria-label="LinkedIn Profile"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://github.com/your-username"
+              target="_blank"
+              aria-label="GitHub Profile"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; <span id="current-year"></span> Aditya Suryawanshi. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // Dynamically set the current year for the copyright notice
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+    </script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+      integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
